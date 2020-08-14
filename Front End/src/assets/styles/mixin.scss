@@ -1,0 +1,20 @@
+$fontSize: 37.5;
+@function px2rem($px) {
+  @return ($px / $fontSize) + rem;
+}
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+}
+.title-wrapper{
+  padding-top: 23px !important;
+  margin-top: 52px;
+  height: 60px !important;
+  z-index: 101;
+  box-shadow: 0 0.21333rem 0.21333rem rgba(0, 0, 0, 0);
+}
+.menu-wrapper{
+  height: 27px;
+}

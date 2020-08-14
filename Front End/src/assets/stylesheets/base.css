@@ -1,0 +1,221 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		/* font: inherit; */
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+
+/*=================================================	
+ #Basic Styles
+==================================================*/
+
+
+/*=================================================	
+ #Typography
+==================================================*/
+
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
+	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
+	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; color:#63a490; }
+	h4 { font-size: 24px; line-height: 30px; margin-bottom: 4px; }
+	h5 { font-size: 17px; line-height: 24px; }
+	h6 { font-size: 14px; line-height: 21px; color:#fa9152; margin-bottom: 4px;}
+	
+	p { margin: 0 0 20px 0; color:'#000 !important'}
+	p img { margin: 0; }
+	/* p.lead { font-size: 21px; line-height: 27px; color: #b9b9b9;  } */
+
+	em { font-style: italic; }
+	strong { font-weight: bold; }
+	small { font-size: 80%; }
+	
+	blockquote, q { 
+		font: italic 18px/26px Georgia, "Times New Roman", Times, serif; 
+		color:#f6da96;
+		display:block;
+		padding:0px 20px;
+		margin:40px 0px; }
+	cite { font-size:12px; color:#f6da96; }
+
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+
+/*=================================================	
+ #Links
+==================================================*/
+	a, a:visited { color: #fa9151; text-decoration: none; outline: 0; }
+	a:hover, a:focus { color: #f6da96; }
+	p a, p a:visited { line-height: inherit; }
+	
+
+/*=================================================	
+ #Images
+==================================================*/
+
+	img.scale-with-grid {
+		max-width: 100%;
+		height: auto; }
+	#logo{ 
+		float:left; 
+		padding-right:20px; }
+	
+/*=================================================	
+ #Buttons
+==================================================*/
+	a.button {
+		font-family: 'Oswald', sans-serif;
+		font-size:18px;
+		text-transform:uppercase;
+		color:#21201e;
+		display:inline-block;
+		padding:5px 10px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		margin:5px 5px; }
+		
+	a.green { background-color:#598d7c; }
+	a.orange { background-color:#fa9152; }
+	a.yellow { background-color:#f6da96; }
+	
+	a.green:hover,
+	a.orange:hover,
+	a.yellow:hover  { background-color:#474543; }
+
+
+/* #Tabs (activate in tabs.js)
+================================================== */
+	ul.tabs {
+		display: block;
+		margin: 40px 0px 0px 0px;
+		padding: 0;
+		border-bottom: solid 1px #393837; }
+	ul.tabs li {
+		display: block;
+		width: auto;
+		height: 30px;
+		padding: 0;
+		float: left;
+		margin-bottom: 0; }
+	ul.tabs li a {
+		display: block;
+		text-decoration: none;
+		width: auto;
+		height: 29px;
+		padding: 0px 20px;
+		line-height: 30px;
+		border: solid 1px #2f2d28;
+		border-width: 1px 1px 0 0;
+		margin: 0;
+		background: #2f2d28;
+		font-size: 13px;
+		margin-right:1px; }
+	ul.tabs li a.active {
+		background: #21201e;
+		height: 30px;
+		position: relative;
+		top: -4px;
+		padding-top: 4px;
+		border-left-width: 1px;
+		margin: 0 0 0 -1px;
+		color: #f6da96;
+		-moz-border-radius-topleft: 2px;
+		-webkit-border-top-left-radius: 2px;
+		border-top-left-radius: 2px;
+		-moz-border-radius-topright: 2px;
+		-webkit-border-top-right-radius: 2px;
+		border-top-right-radius: 2px; }
+	ul.tabs li:first-child a.active {
+		margin-left: 0; }
+	ul.tabs li:first-child a {
+		border-width: 1px 1px 0 1px;
+		-moz-border-radius-topleft: 2px;
+		-webkit-border-top-left-radius: 2px;
+		border-top-left-radius: 2px; }
+	ul.tabs li:last-child a {
+		-moz-border-radius-topright: 2px;
+		-webkit-border-top-right-radius: 2px;
+		border-top-right-radius: 2px; }
+
+	ul.tabs-content { margin:0px 0px 40px 0px; display: block; border-bottom: solid 1px #393837; }
+	ul.tabs-content > li { display:none; padding:40px 0px; }
+	ul.tabs-content > li.active { display: block; }
+
+	/* Clearfixing tabs for beautiful stacking */
+	ul.tabs:before,
+	ul.tabs:after {
+	  content: '\0020';
+	  display: block;
+	  overflow: hidden;
+	  visibility: hidden;
+	  width: 0;
+	  height: 0; }
+	ul.tabs:after {
+	  clear: both; }
+	ul.tabs {
+	  zoom: 1; }
+
+
+/*=================================================	
+ #Forms
+==================================================*/
+
+	form { margin-bottom: 20px; }
+	fieldset { margin-bottom: 20px; }
+	label { 
+		text-transform:uppercase; 
+		font: 18px/18px 'Oswald', sans-serif;
+		color:#55514c;
+		display:inline-block;
+		padding:10px 0px; }		
+	input {
+		width:96%;
+		border:1px solid #2a2825;
+		padding:10px 10px 8px 10px;
+		color:#55514c;
+		background:#2a2825; }
+	textarea {
+		background:#2a2825;
+		border:1px solid #2a2825;
+		font: 12px/20px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		/* color:#55514c; */
+		width:96%;
+		height:175px;
+		padding:5px 10px 8px 10px; }		
+	input[type="submit"] {
+		font: 18px/18px 'Oswald', sans-serif;
+		color:#63a490; 
+		background:#2a2825;
+		text-transform:uppercase;
+		width:85px;
+		float:right;
+		padding:5px 10px;
+		margin:10px 0px;
+		cursor:pointer; }
+
+/*=================================================	
+ #Misc
+==================================================*/
+	.remove-bottom { margin-bottom: 0 !important; }
+	.half-bottom { margin-bottom: 10px !important; }
+	.add-bottom { margin-bottom: 20px !important; }
+
+

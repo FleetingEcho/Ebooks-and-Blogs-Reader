@@ -1,0 +1,13 @@
+.title-wrapper {
+  padding-top: 23px !important;
+  margin-top: 52px;
+  height: 60px !important;
+  z-index: 101;
+  -webkit-box-shadow: 0 0.21333rem 0.21333rem rgba(0, 0, 0, 0);
+          box-shadow: 0 0.21333rem 0.21333rem rgba(0, 0, 0, 0);
+}
+
+.menu-wrapper {
+  height: 27px;
+}
+/*# sourceMappingURL=mixin.css.map */
