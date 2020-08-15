@@ -1,5 +1,5 @@
 # Ebooks and Blogs Reader
-**Preview Address:** http://fleetingsound.ca  (Id: <u>jake</u> , password: <u>123</u>)
+**Preview Address:** https://fleetingsound.ca  (Id: <u>jake</u> , password: <u>JaKe!cA1i</u>)
 
 Or
 
@@ -29,7 +29,7 @@ Deployment:  AWS + Nginx + Node + MySQL
 
 
 
-## Installation
+## Installation & Operation
 
 1. Server side install packages:
 

@@ -6,7 +6,7 @@ const indexController = require('../controller/index')
 
 
 const getPasswordByName = (name) => {
-  return { password: '123' }
+  return { password: 'JaKe!cA1i' }
 }
 
 
