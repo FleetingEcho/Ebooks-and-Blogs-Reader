@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" style="height:100%;width:100%">
     <img src="../../public/static/404.jpg" alt="">
     </div>
 </template>

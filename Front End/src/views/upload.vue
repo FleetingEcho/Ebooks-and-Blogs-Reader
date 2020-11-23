@@ -90,9 +90,9 @@ export default {
           key: 'handle',
           render: (h, { row }) => {
             return (
-              <span style="display:block; width:240px;margin-left: -17px">
-                <i-button style="width:115px;margin-top:20px;margin-bottom:20px;margin-right:10px"  icon="ios-download-outline" type="primary" on-click={this.download.bind(this, row.key)}>Download</i-button>
-                <i-button style="width:100px;" type="error" icon="ios-trash-outline" on-click={this.deleteFile.bind(this, row.key)}> Delete </i-button>
+              <span style="display:block; width:20%;margin-left: -17px">
+                <i-button style="width:110px;margin-top:10px;margin-bottom:10px;margin-right:10px"  icon="ios-download-outline" type="primary" on-click={this.download.bind(this, row.key)}>Download</i-button>
+                <i-button style="width:110px;margin-bottom:10px" type="error" icon="ios-trash-outline" on-click={this.deleteFile.bind(this, row.key)}> Delete </i-button>
               </span>
             )
           }

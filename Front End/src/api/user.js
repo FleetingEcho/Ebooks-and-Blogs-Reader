@@ -4,9 +4,6 @@ export const getUserInfo = () => {
     // url: '/index/getDataAction',
     url: '/getUserInfo',
     method: 'post',
-    // data: {
-    //   userId
-    // }
   })
 }
 

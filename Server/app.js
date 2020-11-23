@@ -2,6 +2,7 @@ const createError = require('http-errors')
 const express = require('express')
 require('colors')
 const path = require('path')
+const helmet = require("helmet");
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 const history = require('connect-history-api-fallback')
@@ -11,6 +12,8 @@ const dataRouter = require('./routes/data');
 const compression = require('compression')
 const app = express()
 //use compression before other middleWares
+
+app.use(helmet());
 app.use(compression());
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))

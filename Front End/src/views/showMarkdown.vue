@@ -15,7 +15,7 @@
 </div>
  <h1 class="theEnd"> The Ends </h1>
 <div style="margin-left:30%;width:40%;margin-bottom:100px">
-            <Button class="editButton" type="dashed"  @click="editBlogs()">Go Edit</Button>
+            <Button class="editButton" type="dashed"  @click="editBlogs()">Edit</Button>
           <Button type="dashed" class="delButton"  @click="delBlog()">Delete</Button>
 </div>
       <!-- ========== -->

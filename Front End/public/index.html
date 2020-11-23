@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy"
+      content=" style-src-elem *  'unsafe-eval' 'unsafe-inline' data: blob: ;
+                font-src * data:;
+                worker-src blob:; 
+                child-src blob: gap:;
+                script-src * 'unsafe-inline' 'unsafe-eval'; 
+                default-src * 'unsafe-inline' 'unsafe-eval';
+                connect-src * 'unsafe-inline';
+                img-src * data: blob: 'unsafe-inline'; 
+                style-src * 'unsafe-inline';
+              "/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"
+    />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title>ebook</title>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but ebook doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but ebook doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong
+      >
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
